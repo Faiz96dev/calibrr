@@ -9,7 +9,7 @@ export default () => {
             'Content-Type': 'application/json',
         },
         params:{
-            key:'22798814-c6a6febdde4edc54b7e610eea'
+            key:'22798814-c6a6febdde4edc54b7e610eea' // yes this stuff i need store in .env
         }
     });
         api.interceptors.response.use(function (response) {

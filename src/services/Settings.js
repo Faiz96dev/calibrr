@@ -1,6 +1,6 @@
 class Settings {
     get getBaseApiUrl() {
-        return `https://pixabay.com/api`;
+        return `http://pixabay.com/api`;
     }
 
 }

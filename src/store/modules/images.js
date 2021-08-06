@@ -1,6 +1,9 @@
 import Images from "@/services/Images";
 import _ from "lodash";
 import {orderTypes} from "@/helpers/filterHelper";
+import router from '@/router';
+
+
 
 export default {
     namespaced: true,
@@ -32,6 +35,10 @@ export default {
             let response = await Images.fetchImages();
             commit('SET_IMAGES', response.hits);
             commit('SET_LOADING', false);
+            return response
+        },
+        async showDefaultError() {
+           await router.push('error')
         },
     },
     getters: {

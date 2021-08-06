@@ -1,19 +1,18 @@
 <template>
   <div class="main-container" id="app">
-    <filter-panel/>
-    <image-container/>
+
+    <router-view/>
+
   </div>
 </template>
 
 <script>
-import ImageContainer from "@/components/ImageContainer";
-import FilterPanel from "@/components/FilterPanel";
+
 
 export default {
   name: 'App',
   components: {
-    FilterPanel,
-    ImageContainer,
+
   }
 }
 </script>

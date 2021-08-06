@@ -5,10 +5,6 @@ import router from '../router/index'
 export default () => {
     let api = axios.create({
         baseURL: Settings.getBaseApiUrl,
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
         params:{
             key:'22798814-c6a6febdde4edc54b7e610eea' // yes this stuff i need store in .env  22798814-c6a6febdde4edc54b7e610eea
         }

@@ -2,8 +2,8 @@ import Api from "@/services/Api";
 
 export default {
 
-    fetchImages(requestParams) {
-        return Api().get('', {params: requestParams});
+    fetchImages() {
+        return Api().get();
     },
 
 }
